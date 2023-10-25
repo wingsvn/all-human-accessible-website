@@ -48,12 +48,12 @@
     --tran-05: all 0.3s ease;
 }
 
-
 body {
     min-height: 100vh;
     background-color: var(--body-color);
     transition: var(--tran-05);
     font-family: AvenirMedium;
+    position: relative;
 }
 
 ::selection {
@@ -328,9 +328,9 @@ body.dark .switch::before {
     left: 20px;
 }
 
-header {
+/* mobile version */
+.home {
     position: absolute;
-    top: 0;
     top: 0;
     left: 250px;
     height: 100vh;
@@ -338,18 +338,69 @@ header {
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
-header .logo {
+.home .logo {
     font-size: 20px;
     font-weight: 500;
     color: var(--text-color);
     padding: 12px 60px;
 }
 
-.sidebar.close ~ .header {
+.sidebar.close ~ .home {
     left: 78px;
     height: 100vh;
     width: calc(100% - 78px);
 }
-body.dark .header .logo {
+body.dark .home .logo {
     color: var(--text-color);
+}
+/*main {
+    width: 90%;
+    margin: 0 auto;
+}
+*/
+
+/* header */
+h1 {
+   font-size: 2rem; 
+}
+
+h2 {
+    font-size: 1rem;
+}
+/* boeken */
+.boek {
+    display: flex;
+}
+
+article img {
+    width: 12rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+
+}
+
+h4{
+}
+
+h5{
+}
+
+h6 {
+}
+
+button {
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 2rem;
+    border: none;
+}
+
+.cd {
+    display: flex;
+}
+
+.dvd {
+    display: flex;
 }
