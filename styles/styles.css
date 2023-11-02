@@ -34,12 +34,13 @@
 
 :root {
     /* ===== Colors ===== */
-    --body-color:#E4E9F7;
+    --body-color: #E4E9F7;
     --sidebar-color: #FFF;
-    --primary-color: #FF0000;
+    --primary-color: #D50000;
     --primary-color-light: #F6F5FF;
     --toggle-color: #DDD;
     --text-color: #707070;
+
 
     /* ====== Transition ====== */
     --tran-03: all 0.2s ease;
@@ -96,7 +97,7 @@ body.dark {
     margin-top: 10px;
 }
 
-.sidebar /*header*/.image,
+.sidebar .image,
 .sidebar .icon {
     min-width: 60px;
     border-radius: 6px;
@@ -147,42 +148,42 @@ body.dark {
 
 /* =========================== */
 
-.sidebar /*header*/{
+.sidebar {
     position: relative;
 }
 
-.sidebar /*header*/ .image-text {
+.sidebar .image-text {
     display: flex;
     align-items: center;
 }
-.sidebar /*header*/ .logo-text {
+.sidebar .logo-text {
     display: flex;
     flex-direction: column;
 }
-/*header*/ .image-text .name {
+.image-text .name {
     margin-top: 2px;
     font-size: 18px;
     font-weight: 600;
 }
 
-/*header*/ .image-text .profession { 
+.image-text .profession { 
     font-size: 16px;
     margin-top: -2px;
     display: block;
 }
 
-.sidebar /*header*/ .image {
+.sidebar .image {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sidebar /*header*/ .image img {
+.sidebar .image img {
     width: 3rem;
     border-radius: 180px;
 }
 
-.sidebar /*header*/ .toggle {
+.sidebar .toggle {
     position: absolute;
     top: 10%;
     right: -15px;
@@ -190,6 +191,7 @@ body.dark {
     height: 25px;
     width: 25px;
     background-color: var(--primary-color);
+    var(--text-color);
     color: var(--sidebar-color);
     border-radius: 50%;
     display: flex;
@@ -214,7 +216,7 @@ body.dark .sidebar header .toggle {
 
 .sidebar li.search-box {
     border-radius: 6px;
-    background-color: var(--primary-color-light);
+    background-color: var(--body-color); /*var(--sidebar-color) */
     cursor: pointer;
     transition: var(--tran-05);
 }
@@ -224,7 +226,7 @@ body.dark .sidebar header .toggle {
     width: 100%;
     outline: none;
     border: none;
-    background-color: var(--primary-color-light);
+    background-color: var(--body-color);
     color: var(--text-color);
     border-radius: 6px;
     font-size: 17px;
@@ -268,7 +270,7 @@ body.dark .sidebar li a:hover .text {
 }
 .sidebar .menu-bar .mode {
     border-radius: 6px;
-    background-color: var(--primary-color-light);
+    background-color: var(--body-color);
     position: relative;
     transition: var(--tran-05);
 }
@@ -307,7 +309,7 @@ body.dark .mode .sun-moon i.moon {
     height: 22px;
     width: 40px;
     border-radius: 25px;
-    background-color: var(--toggle-color);
+    background-color: var(--primary-color);
     transition: var(--tran-05);
 }
 
@@ -467,4 +469,8 @@ article button:active {
         width: 13rem;
         height: auto;
     }
+}
+
+body.dark .home {
+    color: var(--text-color);
 }
