@@ -191,7 +191,6 @@ body.dark {
     height: 25px;
     width: 25px;
     background-color: var(--primary-color);
-    var(--text-color);
     color: var(--sidebar-color);
     border-radius: 50%;
     display: flex;
