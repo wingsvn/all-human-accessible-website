@@ -18,7 +18,7 @@ Userstory: "Toon in een overzicht alle abonnementen van een familie met een verw
 Mijn OBA uitleningen pagina bestaat uit 2 delen, namelijk de navigatiebar en uit de homepage met uitleningen zelf. Op de navigatiebar vindt je een search-box, darkmodus en linkjes naar andere pagina's binnen het mijn OBA platform. Deze is ook in- en uit te klappen mocht dat nodig zijn. Op de homepage met de uitleningen vindt je alle uitgeleende producten en materialen op volgorde van boeken, DVD's en CD's. Per categorie staan de producten horizontaal naast elkaar en kun je door middel van scrollen, de rest van de producten zien, die evt. niet in beeld zijn. Elk product heeft verder nog een verleng button, mocht de gebruiker het product nog langer willen lenen. En bijna in te leveren producten zijn voorzien van een rode font voor de urgentie er van. Voor een duidelijker overzicht staat er boven op de pagina ook nog het totaal aantal producten die de gebruiker nog moet inleveren. 
 
 <!-- Voeg een mooie poster visual toe 📸 -->
-<img width="255" alt="image" src="https://github.com/wingsvn/all-human-accessible-website/assets/144009709/35966dcf-4123-48e2-a85f-f49423dd07f1">
+<img width="254" alt="image" src="https://github.com/wingsvn/all-human-accessible-website/assets/144009709/35966dcf-4123-48e2-a85f-f49423dd07f1">
 
 <img width="650" alt="image" src="https://github.com/wingsvn/all-human-accessible-website/assets/144009709/95ab95df-69ea-490f-93c5-1c3283f4c634">
 
@@ -33,6 +33,8 @@ Link naar mijn website: https://wingsvn.github.io/all-human-accessible-website/u
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
 Mijn pagina is in HTML gestructureerd uit een navbar en main met daarin div- en article elementen. De navigatiebar heb ik in HTML opgezet met list items binnen een unordered list.  De gegevens van elk boek, DVD en CD bevinden zich elk in een article element. Elk article van de desbetreffende categoriën zit weer in hun desbetreffende div element, om ze van elkaar te onderscheiden. En om per categorie de producten naast elkaar te zetten heb ik CSS flex gebruikt. Verder heb ik voor de uitbeeld vallende producten CSS overflow: scroll gebruikt om deze producten zichtbaar te krijgen. Om de website aan te passen naar verschillende schermgroottes heb ik mediaquery gebruikt.
+
+Werken aan deze website? Installeer door deze repository te forken en te clonen.
 
 ## Bronnen
 Google Lighthouse
