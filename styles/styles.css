@@ -14,17 +14,6 @@
     src: url("../fonts/Avenir\ -black.ttf")
 }
 
-/* Custom properties */
-/* :root {
-    --red:#FF0000;
-    --dark-color:#ce0000;
-    --black:#000000;
-    --gray:#666;
-    /* --border: .1rem solid rgba(0,0,0,.1);
-    --border-hover: .1rem solid var(--black);
-    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); 
-} */
-
 *{
     margin: 0;
     padding: 0;
@@ -54,7 +43,7 @@ body {
     background-color: var(--body-color);
     transition: var(--tran-05);
     font-family: AvenirMedium;
-    position: relative;
+    /*position: relative;*/
 }
 
 ::selection {
@@ -88,7 +77,6 @@ body.dark {
     width: 88px;
 }
 
-/* ===== Reusable code - Here ===== */
 .sidebar li {
     height: 50px;
     list-style: none;
@@ -149,7 +137,7 @@ body.dark {
 /* =========================== */
 
 .sidebar {
-    position: relative;
+    position: fixed;
 }
 
 .sidebar .image-text {
@@ -262,7 +250,8 @@ body.dark .sidebar li a:hover .text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   /* overflow-y: scroll; */
+    overflow-y: scroll;
+
 }
 .menu-bar::-webkit-scrollbar {
     display: none;
@@ -341,7 +330,7 @@ body.dark .switch::before {
     transition: var(--tran-05);
 }
 .home .logo {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
     color: var(--text-color);
     padding: 12px 60px;
@@ -363,14 +352,15 @@ main {
 
 /* header */
 h1 {
-   font-size: 2.5rem;
+   font-size: 2rem;
    margin-top: 2rem;
    margin-left: 3rem;
    
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 0.75rem;
+    color: var(--primary-color);
     margin-left: 3rem;
 }
 /* boeken */
@@ -450,6 +440,16 @@ article button:active {
 }
 
 @media screen and (min-width: 40rem) {
+
+    .home .logo {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--text-color);
+        padding: 12px 60px;
+        position: absolute;
+        right: 5%
+    }
+
     article img {
         width: 15rem;
         height: auto;
